@@ -1,0 +1,403 @@
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.aside {
+    width:25vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    margin: 0.8vh;
+}
+
+.home {
+    display: flex;
+}
+
+.home ul {
+    margin-top: 1.2vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.home ul li:nth-child(1) {
+    opacity: 100%;
+    cursor: default;
+}
+
+.home ul li {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    font-weight: bold;
+    opacity: 90;
+    cursor: pointer;
+}
+
+
+.home ul li:hover {
+    font-weight: bolder;
+    font-size: large;
+    text-decoration: underline;
+    opacity: 100;
+}
+
+.home img {
+    height: 4vh;
+}
+
+.library {
+    height: 61vh;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    align-items: center;
+    color: white;
+}
+
+.head img {
+    width: 1vw;
+}
+
+.lib {
+    width: 21vw;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    cursor: pointer;
+}
+
+.songslist {
+    height: 52.5vh;
+    color: black;
+    overflow-y: auto;
+}
+
+
+.songslist ul li{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1vw;
+    border: 2px solid rgb(92, 92, 92);
+    margin: 0.4vw;
+    padding: 0.8vw;
+    width: 19vw;
+    list-style: none;
+    cursor: pointer;
+}
+
+.songlist{
+    width: 11vw;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.playnow{
+    display: flex;
+    font-size: smaller;
+    align-items: center;
+    gap: 0.3vw;
+}
+
+
+.privacy {
+    color: white;
+    display: flex;
+    gap: 1vw;
+    font-size: small;
+    font-weight: normal;
+    flex-wrap: wrap;
+    padding: 1.1vw;
+    height: 9vh;
+}
+
+
+.privacy a {
+    color: gray;
+    text-decoration: none;
+}
+
+.body {
+    width: 80vw;
+    margin: 2px;
+    margin-top: 8px;
+}
+
+.header {
+    height: 1.2vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.arrow svg {
+    background-color: white;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 5px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.login{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.login button {
+    width: 5vw;
+    height: 5vh;
+    border-radius: 15px;
+    right: 5px;
+    border-style: none;
+    font-weight: bold;
+    font-size: small;
+    cursor: pointer;
+}
+
+.login button:hover {
+    width: 5.2vw;
+    height: 5.2vh;
+    font-weight: bolder;
+    font-size: 0.9em;
+}
+
+
+.main {
+    height: 82vh;
+    width: 75vw;
+    overflow-y: scroll;
+}
+
+.main h1 {
+    padding: 25px;
+    cursor: pointer;
+}
+
+.mhead {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mhead p {
+    padding: 25px;
+    position: relative;
+    top: 8px;
+    font-weight: bolder;
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.mhead h1:hover{
+    text-decoration: underline;
+}
+
+.mhead p:hover{
+    text-decoration: underline;
+}
+
+.cards {
+    height: 30vh;
+    width: 70vw;
+    display: flex;
+    gap: 1vw;
+    margin-left: 20px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 38vh; 
+    width: 13.5vw;
+    background-color: #252525;
+    cursor: pointer;
+}
+
+.card img {
+    object-fit: contain;
+    padding: 8px;
+    border-radius: 1vw; 
+    height: 70%; 
+}
+
+
+.play {
+    background-color: rgb(0, 206, 0);
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 4px;
+    object-fit: contain;
+    position: absolute;
+    bottom: 9vh;
+    right: 1vw; 
+    opacity: 0;
+    transition: none;
+}
+
+.play svg{
+    fill: rgb(27, 27, 27);
+    object-fit: contain;
+}
+
+.card h2 {
+    font-size: medium;
+    margin-left: 7px;
+    color: white;
+}
+
+.card p {
+    font-size: smaller;
+    margin-left: 7px;
+    height: 5vh;
+    width: 9vw;
+    overflow: hidden;
+    color: white;
+
+}
+
+.card:hover .play {
+    opacity: 1;
+    bottom: 11vh;
+    transition: all 0.4s;
+}
+
+.card:hover{
+    transition: all 0.9s;
+    background-color: #444444;
+}
+
+.mabout{
+    display: grid;
+    grid-template-areas: "about1 about2 about3 about4 about5";
+    margin-top: 18vh;
+    margin-left: 2vw;
+    cursor: pointer;
+}
+
+.line{
+    border: 2px solid rgb(60, 59, 59);
+    width: 65vw;
+    margin: auto;
+    margin-top: 5vh;
+    margin-right: 6.8vw;
+}
+
+.cr{
+    margin-top: 4vh;
+    margin-left: 2vw;
+    margin-bottom: 4vh;
+}
+
+.playbar {
+    height: 55px;
+    padding-top: 10px;
+    background-color: rgb(37, 37, 37);
+    width: 71.5vw;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.songinfo{
+    width: 28vw;
+    overflow: hidden;
+    height: 5vh;
+}
+
+.songbuttons{
+    width: 25vw;
+    height: 4vh;
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.time{
+    width: 7vw;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.vol_time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+.songvolume{
+    cursor: pointer;
+}
+
+.volume{
+    position: absolute;
+    opacity: 0;
+    background-color: rgb(191, 191, 191);
+    bottom: 4vh;
+    cursor: pointer;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+
+}
+
+.songvolume:hover{
+    .volume{
+        opacity: 100;    
+    }
+}
+
+.playdetails{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.seekbar {
+    height: 5px;
+    background-color: rgb(176, 11, 11);
+    position: relative;
+    z-index: 2;
+    width: 70vw;
+    margin: auto;
+    bottom: 5px;
+    right: 12px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.circle {
+    position: relative;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    bottom: 1.5px;
+    left: 1px;
+    transition: left 0.5s;
+}
+

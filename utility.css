@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.bg-gray{
+    background-color: #121212;
+}
+
+.m-1{
+    margin: 6px;
+}
+
+.p-1{
+    padding: 6px;
+}
+
+.radius-1{
+    border-radius: 12px;
+}
