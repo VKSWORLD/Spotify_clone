@@ -5,7 +5,7 @@ let currFolder;
 
 async function getSongs(folder) {
     currFolder = folder
-    let a = await fetch(`http://127.0.0.1:5500/${folder}/`)  
+    let a = await fetch(`http://127.0.0.1:3000/${folder}/`)  
     let response = await a.text();
 
     let div = document.createElement("div")
@@ -89,7 +89,7 @@ async function displayAlbum(){
             let a = await fetch(`/songs/${folder}/info.json`)
             let response = await a.json(); 
             cards.innerHTML = cards.innerHTML + `<div data-folder="${folder}" class="card radius-1">
-            <img src="/img/cover.jpg" alt="">
+            <img src="songs/${folder}/cover.jpg" alt="">
             <div class="play">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
                     color="#000000" fill="none">
@@ -99,7 +99,7 @@ async function displayAlbum(){
                 </svg>
             </div>
             <h2>${response.title}</h2>
-            <p>${response.discription}</p>
+            <p>${response.description}</p>
         </div>`
         }
     }
