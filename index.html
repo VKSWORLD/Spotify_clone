@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify Clone</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utility.css">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spotify Clone</title>
+        <link rel="stylesheet" href="utility.css">
+        <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -14,7 +14,7 @@
         <div class="aside">
             <div class="home bg-gray radius-1 p-1">
                 <ul class="invert">
-                    <li><img src="img/logo.svg" alt="logo"></li>
+                    <li><img src="img/icon.svg" alt="home">KAIFIFY</li>
                     <li><img src="img/home.svg" alt="home">Home</li>
                     <li><img src="img/search.svg" alt="search">Search</li>
                 </ul>
@@ -32,32 +32,26 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="legal bg-gray radius-1">
-                <div class="privacy">
-                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
-                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
-                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
-                    </div>
-                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
-                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
-                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
-                </div>
-            </div>
+            </div>  
         </div>
         <div class="body">
             <div class="header bg-gray radius-1">
-                <div class="arrow invert">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
+                <div class="hamarrow">
+                    <div class="hamburger">
+                        <img width="40" class="invert hamburger" src="img/hamburger.svg" alt="">
+                    </div>
+                    <div class="arrow invert">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
                         fill="none">
-                        <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="currentColor"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
-                        fill="none">
-                        <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
+                            <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
+                            fill="none">
+                            <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
                 </div>
                 <div class="login invert">
                     <button>
@@ -70,48 +64,16 @@
             </div>
             <div class="main bg-gray radius-1">
                 <div class="mhead invert">
-                    <h1>Spotify Playlist</h1>
+                    <h1>KAIFIFY Playlist</h1>
                     <p>Show All</p>
                 </div>
                 <div class="cards">
                     
                 </div>
 
-                <div class="mabout invert">
-                    <div class="about1">
-                        <h3>Company</h3>
-                        <p>About</p>
-                        <p>Jobs</p>
-                        <p>For the record</p>
-                    </div>
-                    <div class="about2">
-                        <h3>Company</h3>
-                        <p>About</p>
-                        <p>Jobs</p>
-                        <p>For the record</p>
-                    </div>
-                    <div class="about3">
-                        <h3>Company</h3>
-                        <p>About</p>
-                        <p>Jobs</p>
-                        <p>For the record</p>
-                    </div>
-                    <div class="about4">
-                        <h3>Company</h3>
-                        <p>About</p>
-                        <p>Jobs</p>
-                        <p>For the record</p>
-                    </div>
-                    <div class="about5">
-                        <h3>Company</h3>
-                        <p>About</p>
-                        <p>Jobs</p>
-                        <p>For the record</p>
-                    </div>
-                </div>
                 <div class="line"></div>
                 <div class="cr invert">
-                    © 2024 Spotify AB
+                    © 2024 Kaifify AB
                 </div>
             </div>
             <div class="playbar radius-1">
@@ -126,7 +88,7 @@
                     </div>
                     <div class="vol_time">
                         <div class="songvolume invert">
-                            <img src="img/volume.svg" alt="">
+                            <img class="volumeImage" src="img/volume.svg" alt="">
                             <div class="volume">
                                 <input  type="range">
                             </div>
@@ -142,8 +104,8 @@
             </div>
         </div>
     </div>
-
-
+    
+    
 
 
     <script src="script.js"></script>

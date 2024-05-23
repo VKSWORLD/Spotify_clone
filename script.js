@@ -75,6 +75,7 @@ function secondsToMinutesSeconds(seconds) {
 async function displayAlbum(){
     let a = await fetch('/songs/')  
     let response = await a.text();
+    console.log(a);
 
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -165,9 +166,8 @@ async function main() {
         })
     })
 
-    document.querySelector('.songvolume').addEventListener("click",e=>{
-        console.log(e.target.src)
-        console.log(e.target)
+    document.querySelector('.volumeImage').addEventListener("click",e=>{
+
         if(e.target.src.includes('volume.svg')){
             e.target.src = e.target.src.replace('volume.svg','mute.svg')
             currentsong.volume = 0;
@@ -178,6 +178,10 @@ async function main() {
             currentsong.volume = 0.1;
             document.querySelector(".volume").getElementsByTagName("input")[0].value = 10; 
         }
+    })
+
+    document.querySelector('.hamburger').addEventListener("click",e=>{
+        document.querySelector(".aside").style.display = "block"
     })
 
 }
